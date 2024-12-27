@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b74b51;
+    font-family: 'MyWebFont';
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    height: 500px;
+    display: inline-block;
+    text-align: left;
+    
+}
+
+#divLogo {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 20%;
+    height: 550px;
+    vertical-align: top; 
+}
+
+.mainText {
+    
+    font-size: 110px;
+    font-weight: 500;
+    color: white;
+    line-height: 110px;
+    margin-bottom: 60px;
+}
+
+.subText {
+   
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    line-height: 30px;
+}
+.divImg {
+    
+   
+    
+    margin-right:30px;
+    z-index: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    
+}
+.staticImage {
+    box-shadow:100px 50px 100px  #1d212b;
+    
+    margin-right: 0%;
+    height: 550px;
+    object-fit: cover;
+}
+#search{
+    margin-top: 40px;
+    width: 380px;
+    height: 50px;
+    background-color: #b74b51;
+    border: none;
+    border-bottom: 1px solid white;
+}
+#search::placeholder {
+    color: white;
+    font-size: 20px;
+    font-weight: 10;
+    
+}
+svg{
+    margin-top: 50px;
+}
