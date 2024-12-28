@@ -1,0 +1,76 @@
+footer {
+    background-image:image-set("https://cdn.prod.website-files.com/6204cf4c0183116ad570d6a8/6204d5236eff38c7be628448_footer_bg-01.webp");
+    background: linear-gradient(250deg,
+    #c62d43,
+    #c62d43,
+    #c62d43,
+    #7c5265,
+    #9897aa,
+    #c62d43,
+    #c62d43,
+    #c62d43,
+    #c62d43);
+animation: gradient 20s ease infinite;
+background-size: 300% 300%;
+    color: #fff;
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+@keyframes gradient {
+0% {
+background-position: 0% 50%;
+}
+
+25% {
+background-position: 50% 50%;
+}
+
+50% {
+background-position: 100% 50%;
+}
+
+75% {
+background-position: 50% 50%;
+}
+
+100% {
+background-position: 0% 50%;
+}
+}
+.social-icons {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin:  20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    padding-right: 25% ;
+  
+
+}
+ul {
+    list-style: none;
+}
+li {
+    margin-bottom: 10%;
+}
+
+ a{
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration:none;
+ }
+     
+ 
