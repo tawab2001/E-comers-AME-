@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Basket</title>
+    <script  src="button.js"></script> <!-- Ensure this script defines the cart array -->
+</head>
+<body>
+    
+
+    <script>
+        
+
+            console.log(cart); // Print the cart array to the console
+
+            const tbody = document.querySelector('tbody');
+            if (!tbody) {
+                console.error('tbody element not found');
+                return;
+            }
+            let total = 0;
+
+            cart.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>$${item.price.toFixed(2)}</td>
+                    <td>${item.quantity}</td>
+                    <td>$${(item.price * item.quantity).toFixed(2)}</td>
+                    <td><button class="btn btn-danger">Remove</button></td>
+                `;
+                tbody.appendChild(tr);
+                total += item.price * item.quantity;
+            });
+
+            document.querySelector('h3').textContent = `Total: $${total.toFixed(2)}`;
+        
+    </script>
+
+    <style>
+        .cart {
+            margin-top: 50px;
+            width: 70%;
+            height: 600px;
+            margin: 15%;
+            background-color: rgb(158, 107, 40);
+            border-radius: 30px;
+            padding: 50px;
+        }
+        .text-center{
+            text-align: center;
+
+        }
+    </style>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Shopping Basket</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be dynamically generated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Total: $0.00</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

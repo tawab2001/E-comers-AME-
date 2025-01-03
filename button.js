@@ -1,4 +1,5 @@
 var cart = [];
+
 var cartCount = 0;
 
 // Link the json file
@@ -40,6 +41,9 @@ function addToCart(productId) {
                 updateCartIcon();
             }
         });
+       
+        console.log(cart);
+
 }
 
 // Update the count
@@ -47,3 +51,4 @@ function updateCartIcon() {
     var cartCountElement = document.getElementById('cart-count');
     cartCountElement.textContent = cartCount;
 }
+
