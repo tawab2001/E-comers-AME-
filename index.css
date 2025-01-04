@@ -273,7 +273,8 @@
 }
 
 .product-item {
-    margin-bottom: 20px; /* Add some spacing between product items */
+    margin-bottom: 20px; /* Add some spacing between
+     product items */
 }
 
 .product-details {
@@ -281,6 +282,8 @@
     padding: 10px;
     border-radius: 5px;
 }
+
+
 
 .text-center{
     text-align: center;
