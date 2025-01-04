@@ -42,4 +42,12 @@ document.getElementById('sign-in-form').addEventListener('submit', function(even
 
       
     }
+
+    fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => {
+        console.log('Response 1:', data);
+    })
+    .catch(error => console.error('Error:', error));
+
 });
