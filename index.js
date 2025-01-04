@@ -7,7 +7,9 @@ document.querySelector('.shop-icon').addEventListener('click', function() {
     updateCart();
 });
 
-
+document.getElementById('close-cart').addEventListener('click', function() {
+    document.querySelector('.cart').style.display = 'none';
+});
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let clickCount = 0;
@@ -88,14 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 console.log(cart);
 
-
 document.querySelectorAll('.categorys').forEach(div => {
     div.addEventListener('click', () => {
         const category = div.dataset.category; 
         window.location.href = `products.html?category=${category}`; 
     });
 });
-
 
 document.getElementById('search-input').addEventListener('input', function() {
     const searchInput = document.getElementById('search-input').value.trim();
