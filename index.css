@@ -84,23 +84,34 @@
     object-fit: cover;
 }
 
-#search {
+.serch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+    #search-input {
     margin-top: 40px;
     width: 380px;
     height: 50px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
-}
-
-#search::placeholder {
+    font-size: large;
+    background-image: url('pro/search.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
     padding-left: 40px;
     color: white;
     font-size: 15px;
     font-weight: 100;
-
-}
-
+    }
+    
+    #search-input:focus {
+    border-bottom: 1px solid white; 
+    outline: none; 
+    }
 .smalDivs {
     position: relative;
     display: inline-block;
@@ -136,14 +147,7 @@
     }
 }
 
-.searchIcon {
-    width: 20px;
 
-    position: absolute;
-    z-index: 1;
-    margin-top: 50px;
-
-}
 #img1{
    z-index: 1;
  width: 448px;
@@ -206,14 +210,14 @@
 }
 @keyframes grow {
     from {
-        transform: scale(0.5); /* Start small */
+        transform: scale(0.5);
     }
     to {
-        transform: scale(1); /* Grow to normal size */
+        transform: scale(1); 
     }
 }
 .categorys:hover {
-    transform: scale(1.1); /* Scale the div and its children */
+    transform: scale(1.1); 
 }
 .container_c{
    
@@ -262,19 +266,18 @@
     right: 0px;
     z-index: 5;
     display: none;
-    overflow-y: auto; /* Add vertical scrolling */
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
-    opacity: .9;
+    overflow-y: auto; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;  
 }
 
 .cart::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
+    display: none; 
 }
 
 .product-item {
-    margin-bottom: 20px; /* Add some spacing between
-     product items */
+    margin-bottom: 20px; 
+     
 }
 
 .product-details {

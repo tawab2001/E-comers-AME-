@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Category</title>
+<link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+    <div id="serch">
+        <input type="text" id="search-input" placeholder="Search products...">
+    </div>
+
+    <div id="bigDiv">
+        <div class="smalDivs" style="transform-origin: 100% 100%;"></div>
+        <div class="smalDivs" style="transform-origin: 0% 100%;"></div>
+        <div class="smalDivs" style="transform-origin: 100% 0%;"></div>
+        <div class="smalDivs" style="transform-origin: 0% 0%;"></div>
+    </div>
+    <div id="product-container" class="product-container"></div>
+
+
+    <div id="products-container"></div>
+    <div id="cart-icon" onclick="redirectToCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    </div>
+
+
+    <script src="products.js"></script>
+
+</body>
+</html>
