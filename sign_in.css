@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +59,7 @@ body {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 350px;
 }
 
 h2 {
@@ -127,3 +128,38 @@ a:hover {
 input:focus {
     border-color: #7c5265;
   }
+
+
+.social-btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.facebook-btn {
+    background-color: #3b5998; 
+}
+
+.facebook-btn:hover {
+    background-color: #2d4373; 
+}
+
+.google-btn {
+    background-color: #db4437;
+}
+
+.google-btn:hover {
+    background-color: #a53327; 
+}
+.social-login {
+    justify-content: center; 
+    margin-left: 70px;
+}
