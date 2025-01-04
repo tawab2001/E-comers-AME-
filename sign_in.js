@@ -42,12 +42,26 @@ document.getElementById('sign-in-form').addEventListener('submit', function(even
 
       
     }
+    
+ localStorage.setItem('email', 'JohnDoe@gmail.com');
 
-    fetch('https://api.example.com/data')
-    .then(response => response.json())
-    .then(data => {
-        console.log('Response 1:', data);
-    })
-    .catch(error => console.error('Error:', error));
+   
+    let fetchEmailFromLocalStorage = () => {
+        return new Promise((resolve, reject) => {
+            let email = localStorage.getItem('email');
+            if (email) {
+                resolve(email);
+            } else {
+                reject('No username found in Local Storage'); 
+            }
+        });
+    };
+    
+   
+    fetchEmailFromLocalStorage()
+        .then(email => {
+            console.log('Response 1: Username from Local Storage:', email);
+        })
+        .catch(error => console.error('Error:', error));
 
 });
