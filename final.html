@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="bodystyle.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+
+        <div id="divLogo">
+            <svg width="80" height="37" viewBox="0 0 80 37" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="margin-top: 50px;">
+                <rect width="80" height="37" fill="white" />
+                <path
+                    d="M22.786 26.286C24.634 26.286 26.064 25.692 26.944 24.724C27.714 23.866 28.066 22.722 28.066 21.314V10.27H24.172V21.226C24.172 22.37 23.688 23.074 22.544 23.074C21.466 23.074 20.828 22.524 20.828 21.182V19.884H17.286V21.27C17.286 24.262 19.068 26.286 22.786 26.286ZM37.6563 26.286C42.0343 26.286 44.2123 24.086 44.2123 20.456V10.27H40.3183V20.522C40.3183 22.062 39.4603 23.162 37.6563 23.162C35.7423 23.162 34.9503 22.128 34.9503 20.588V10.27H31.0563V20.456C31.0563 24.13 33.2563 26.286 37.6563 26.286ZM54.4983 23.206C51.9683 23.206 50.6703 21.028 50.6703 18.168C50.6703 15.308 51.9683 13.108 54.4983 13.108C57.0503 13.108 58.3043 15.308 58.3043 18.168C58.3043 21.028 57.0503 23.206 54.4983 23.206ZM54.4763 26.374C59.2503 26.374 62.2643 22.876 62.2643 18.168C62.2643 13.46 59.2503 9.962 54.4763 9.962C49.7243 9.962 46.7103 13.46 46.7103 18.168C46.7103 22.876 49.7243 26.374 54.4763 26.374Z"
+                    fill="#222736" />
+            </svg>
+
+            <div id="bigDiv" style="cursor: pointer;">
+                <div class="smalDivs" style=" transform-origin:  100% 100%;"> </div>
+                <div class="smalDivs" style=" transform-origin:  0% 100%;"> </div>
+                <div class="smalDivs" style=" transform-origin:  100% 0%;"> </div>
+                <div class="smalDivs" style=" transform-origin:  0% 0%;"> </div>
+                <h3 style="color: white; font-size: 20PX; font-weight: 200;">OUR CATEGORY</h3>
+            </div>
+
+        </div>
+
+        <div class="container">
+            
+            <div id="serch">
+                <input type="text" id="search-input" placeholder="Search products...">
+            </div>
+
+            <h1 class="mainText"> Online Shopping</h1>
+            <h2 class="subText">
+                A Comprehensive E-Commerce<br>
+                Platform for Seamless<br>
+                Online Shopping and Secure Transactions</h2>
+        </div>
+        <div class="divImg">
+            <img class="staticImage" src="images/staticImage.webp" alt="staticImage">
+        </div>
+        <br> <br><br>
+        <img src="images/1.webp" id="img1">
+        <img src="images/2.webp" id="img2">
+        <aside style="text-align: left; margin-left: 60%; margin-right: 20%;">
+            <h1 class="mainText">Objects</h1>
+            <h2 class="subText">seamless online shopping experience.
+                The platform aims to offer a wide range of products,
+                personalized recommendations,
+                and secure payment options to
+                enhance the customer journey.</h2>
+            <br><br>
+            <button class="explore">EXPLORE</button>
+
+        </aside>
+    </header>
+
+    <div class="catogarDiv">
+
+        <div class="container_c">
+
+            <div class="catogreHeader">
+                <br>
+                <span style="font-size: 30px ; color: white ;">OUR CATEGORY</span>
+                <br><br>
+                <span style="font-size: 15px ; color: white; margin-left:100px;margin-left:0;">Choose any category
+                    you
+                    want and then
+                    the product you want to buy and you will get it immediately
+                </span>
+            </div>
+
+
+
+            <div class="categorys" data-category="Electronics">
+                <img src="images/elec.jpg" width="100%" height="80%">
+                <h2>ELECTRONICS</h2>
+            </div>
+            
+            <div class="categorys" data-category="Fitness">
+                <img src="images/fit.jpg" width="100%" height="80%">
+                <h2>FITNESS</h2>
+            </div>
+            
+            <div class="categorys" data-category="Home Appliances">
+                <img src="images/home.jpg" width="100%" height="80%">
+                <h2>HOME APPLIANCES</h2>
+            </div>
+            
+            <div class="categorys" data-category="Others">
+                <img src="images/1.webp" width="100%" height="80%">
+                <h2>OTHER</h2>
+            </div>
+            
+        
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="shop-icon">
+        <div id="cart-icon" onclick="redirectToCart()"></div>
+         <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
+            fill="#EFEFEF">
+            <path
+                d="M206-120q-20 0-36.5-12T148-164L38-562q-4-14 4.83-26 8.82-12 24.17-12h202l185-270q5-6 11-9.5t14-3.5q8 0 14 3.5t11 9.5l184 270h206q15.35 0 24.17 12 8.83 12 4.83 26L812-164q-5 20-21.5 32T754-120H206Zm0-60h548l101-360H106l100 360Zm274.18-120q24.82 0 42.32-17.68 17.5-17.67 17.5-42.5 0-24.82-17.68-42.32-17.67-17.5-42.5-17.5-24.82 0-42.32 17.68-17.5 17.67-17.5 42.5 0 24.82 17.68 42.32 17.67 17.5 42.5 17.5ZM342-600h273L479-800 342-600Zm139 240Z" />
+        </svg></div>
+
+
+       <!-- -cart-shopping ---->
+        <div class="cart">
+
+           
+                
+                    <h1 class="text-center">Shopping Basket</h1>
+               
+
+              
+        </div>
+         <!-- about & footer -->
+         <div class="about-div">
+            <span class="small-head1">JUO</span>
+            <br>
+            <span class="small-head2">STUDIO</span>
+            <div class="about-sec-position">
+                <h1 id="about-sec-text"> About</h1>
+                <h4 id="about-sec-text2">An expanded design studio with a main stage and loft offers customers a space to show their furniture design ideas, and access a design team who work closely with them to develop their unique vision for their space.</h4>
+                <button>EXPLORE</button>
+                <br><br>
+                <br>
+                <br>
+                <img src="about/3.webp" class="about_1">
+                <img src="about/4.webp" class="about_2">
+                <img src="about/5.webp" class="about_3">
+            </div>
+            </div>
+        
+            
+            <footer>
+                <h1 style="text-align: left;">Let's Have a Chat!</h1>
+            <nav class="n1">
+            <h3>Contact</h3>
+            <ul>
+               <li>
+                <a href="http://www.halo-lab.com" target="_blank">www.halo-lab.com</a>
+               </li>
+               <li>
+                <a href="mailto:mail@halo-lab.com">mail@halo-lab.com</a>
+               </li>
+               <li>
+                <a href="tel:+380962722100">UA: +38 096 272 2100</a>
+                </li>
+            </ul>
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/halolabteam/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/halolabteam/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/halolabteam/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.behance.net/halolab" target="_blank"><i class="fab fa-behance"></i></a>
+                    </div>
+                </nav>
+                <nav class="n2" >
+                    <h3 class="footer__title-list">Sitemap</h3>
+                    <ul role="list" class="footer__list">
+                        <li>
+                            <a href="#Objects">Objects</a>
+                        </li>
+                        <li>
+                            <a href="#Our-gallery">Our gallery</a>
+                        </li>
+                        <li>
+                            <a href="#About">About</a>
+                        </li>
+                        <li>
+                            <a href="#Contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </footer>
+                
+        
+        
+        
+            <script src="https://kit.fontawesome.com/25e1aadaee.js" crossorigin="anonymous"></script>
+        
+    <script src="index.js"></script>
+</body>
+
+</html>
