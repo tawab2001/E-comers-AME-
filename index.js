@@ -11,6 +11,14 @@ document.getElementById('close-cart').addEventListener('click', function() {
     document.querySelector('.cart').style.display = 'none';
 });
 
+document.querySelector('.explore').addEventListener('click', function() {
+    document.getElementById('explore-content').style.display = 'block';
+});
+
+document.getElementById('close-explore').addEventListener('click', function() {
+    document.getElementById('explore-content').style.display = 'none';
+});
+
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let clickCount = 0;
 
