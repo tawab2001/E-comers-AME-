@@ -118,6 +118,16 @@ document.getElementById('search-input').addEventListener('keydown', function(eve
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.explore').addEventListener('click', function () {
+        document.getElementById('explore-content').style.display = 'block';
+    });
+    document.getElementById('close-explore').addEventListener('click', function () {
+        document.getElementById('explore-content').style.display = 'none';
+    });
+});
+
+
 
 
 
