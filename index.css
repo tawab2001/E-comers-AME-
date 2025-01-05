@@ -451,5 +451,13 @@ li {
     font-family: 'MyWebFont';
     text-decoration:none;
  }
-     
+ .user{
+    margin-top: 40px;
+    margin-left: 30px;
+    color: white;
+    font-family: 'MyWebFont';
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+ }     
  

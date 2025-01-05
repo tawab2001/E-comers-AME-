@@ -7,7 +7,17 @@ document.querySelector('.shop-icon').addEventListener('click', function() {
     updateCart();
 });
 
+// document.getElementById('close-cart').addEventListener('click', function() {
+//     document.querySelector('.cart').style.display = 'none';
+// });
 
+document.querySelector('.explore').addEventListener('click', function() {
+    document.getElementById('explore-content').style.display = 'block';
+});
+
+document.getElementById('close-explore').addEventListener('click', function() {
+    document.getElementById('explore-content').style.display = 'none';
+});
 
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let clickCount = 0;
@@ -84,10 +94,10 @@ function addItemToCart(name, price, quantity) {
 
 document.addEventListener('DOMContentLoaded', () => {
     updateCart();
+    showUserName();
 });
 
 console.log(cart);
-
 
 document.querySelectorAll('.categorys').forEach(div => {
     div.addEventListener('click', () => {
@@ -95,7 +105,6 @@ document.querySelectorAll('.categorys').forEach(div => {
         window.location.href = `products.html?category=${category}`; 
     });
 });
-
 
 document.getElementById('search-input').addEventListener('input', function() {
     const searchInput = document.getElementById('search-input').value.trim();
@@ -127,9 +136,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function redirectToLogin() {
+    window.location.href = 'sign_in.html';
+}
 
+function showUserName() {
+    const user = JSON.parse(localStorage.getItem('userData'));
+    if (user && user.firstname) {
+        document.getElementById('user').textContent = user.firstname;
+    }
+}
 
+const user = JSON.parse(localStorage.getItem('userData'));
+console.log(localStorage);
 
-
-
-
+window.addEventListener('DOMContentLoaded', function () { 
+   
+    
+    if (user) {
+        document.getElementById('user').textContent = user.firstname;
+        console.log(user);
+    }
+});

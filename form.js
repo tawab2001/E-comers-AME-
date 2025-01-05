@@ -34,19 +34,13 @@ function validateForm() {
   }
 
 
-  let passwordPattern = /^([A-Za-z]{1,}\s)([A-Za-z]{1,}\s)*$/;
-  if (!passwordPattern.test(password)) {
-      showError("passwordError", "Please enter a valid password address.");
-      isValid = false;
-  }
+  // let passwordPattern =/^[A-Za-z\d@$!%*?&]{8,}$/;
+  // if (!passwordPattern.test(password)) {
+  //     showError("passwordError", "Please enter a valid password address.");
+  //     isValid = false;
+  // }
 
 
-  // 
-//   if (password.length < 6) {
-//       showError("passwordError", "Password must be at least 6 characters.");
-//       isValid = false;
-//   }
-  
   // Password confirmation validation
   if (password !== confirmPassword) {
       showError("confirmPasswordError", "Passwords do not match.");
@@ -90,6 +84,7 @@ function saveToLocalStorage(firstname, lastname, address, email, password) {
   // Optionally, you can display a success message or do something after storing data
   alert("Data has been saved successfully!");
 }
+
 
 
 

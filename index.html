@@ -11,6 +11,15 @@
 
 <body>
     <header>
+        <div class="user" onclick="redirectToLogin()">
+            <svg  xmlns="http://www.w3.org/2000/svg" height="55px" viewBox="0 -960 960 960" width="77px" fill="#ffffff">
+                <path
+                    d="M480-40 359-161H180q-24 0-42-18t-18-42v-600q0-24.75 18-42.38Q156-881 180-881h600q24 0 42 17.62 18 17.63 18 42.38v600q0 24-18 42t-42 18H601L480-40ZM180-258q60-56 135.9-90.5 75.89-34.5 164-34.5 88.1 0 164.1 34.5T780-258v-563H180v563Zm302-204q58 0 98-40t40-98q0-58-40-98t-98-40q-58 0-98 40t-40 98q0 58 40 98t98 40ZM235-221h490v-9q-54-46-116-69.5T480-323q-67 0-129 23.5T235-230v9Zm247-301q-32.5 0-55.25-22.75T404-600q0-32.5 22.75-55.25T482-678q32.5 0 55.25 22.75T560-600q0 32.5-22.75 55.25T482-522Zm-2-18Z" />
+            </svg>
+            <br> 
+            <span id="user" style="margin-left: 10px; margin-top: 15px;">LOG IN</span>
+        </div>
+       
 
         <div id="divLogo">
             <svg width="80" height="37" viewBox="0 0 80 37" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +41,7 @@
         </div>
 
         <div class="container">
-            
+
             <div id="serch">
                 <input type="text" id="search-input" placeholder="Search products...">
             </div>
@@ -56,12 +65,12 @@
                 personalized recommendations,
                 and secure payment options to
                 enhance the customer journey.</h2>
-                <br><br>
-                <button class="explore">EXPLORE</button>
-               
+            <br><br>
+            <button class="explore">EXPLORE</button>
 
-                
-            
+
+
+
 
         </aside>
     </header>
@@ -87,23 +96,23 @@
                 <img src="images/elec.jpg" width="100%" height="80%">
                 <h2>ELECTRONICS</h2>
             </div>
-            
+
             <div class="categorys" data-category="Fitness">
                 <img src="images/fit.jpg" width="100%" height="80%">
                 <h2>FITNESS</h2>
             </div>
-            
+
             <div class="categorys" data-category="Home Appliances">
                 <img src="images/home.jpg" width="100%" height="80%">
                 <h2>HOME APPLIANCES</h2>
             </div>
-            
+
             <div class="categorys" data-category="Others">
                 <img src="images/1.webp" width="100%" height="80%">
                 <h2>OTHER</h2>
             </div>
-            
-        
+
+
 
 
         </div>
@@ -115,18 +124,18 @@
 
 
 
-       <!-- -cart-shopping ---->
-        <div class="cart">
+    <!-- -cart-shopping ---->
+    <div class="cart">
 
-           
-                
-                    <h1 class="text-center">Shopping Basket</h1>
-                    
-               
 
-              
-        </div>
-        <!-- explore div -->
+
+        <h1 class="text-center">Shopping Basket</h1>
+
+
+
+
+    </div>
+    <!-- explore div -->
     <div class="explore-content" id="explore-content">
         <img id="close-explore" src="images/close.png"
             style=" width: 40px; height: 40px;z-index: 20; cursor: pointer; position: absolute; top: 10px; right: 10px;">
@@ -136,81 +145,84 @@
             essentials, or exclusive deals.</p>
     </div>
 
-         <!-- about & footer -->
-         <div class="about-div">
-            <span class="small-head1">JUO</span>
+    <!-- about & footer -->
+    <div class="about-div">
+        <span class="small-head1">JUO</span>
+        <br>
+        <span class="small-head2">STUDIO</span>
+        <div class="about-sec-position">
+            <h1 id="about-sec-text"> About</h1>
+            <h4 id="about-sec-text2">An expanded design studio with a main stage and loft offers customers a space to
+                show their furniture design ideas, and access a design team who work closely with them to develop their
+                unique vision for their space.</h4>
+            <!-- <button>EXPLORE</button> -->
+            <br><br>
             <br>
-            <span class="small-head2">STUDIO</span>
-            <div class="about-sec-position">
-                <h1 id="about-sec-text"> About</h1>
-                <h4 id="about-sec-text2">An expanded design studio with a main stage and loft offers customers a space to show their furniture design ideas, and access a design team who work closely with them to develop their unique vision for their space.</h4>
-                <!-- <button>EXPLORE</button> -->
-                <br><br>
-                <br>
-                <br>
-                <img src="about/3.webp" class="about_1">
-                <img src="about/4.webp" class="about_2">
-                <img src="about/5.webp" class="about_3">
-            </div>
-            </div>
-        
-            
-            <footer>
-                <h1 style="text-align: left;">Let's Have a Chat!</h1>
-            <nav class="n1">
+            <br>
+            <img src="about/3.webp" class="about_1">
+            <img src="about/4.webp" class="about_2">
+            <img src="about/5.webp" class="about_3">
+        </div>
+    </div>
+
+
+    <footer>
+        <h1 style="text-align: left;">Let's Have a Chat!</h1>
+        <nav class="n1">
             <h3>Contact</h3>
             <ul>
-               <li>
-                <a href="http://www.halo-lab.com" target="_blank">www.halo-lab.com</a>
-               </li>
-               <li>
-                <a href="mailto:mail@halo-lab.com">mail@halo-lab.com</a>
-               </li>
-               <li>
-                <a href="tel:+380962722100">UA: +38 096 272 2100</a>
+                <li>
+                    <a href="http://www.halo-lab.com" target="_blank">www.halo-lab.com</a>
+                </li>
+                <li>
+                    <a href="mailto:mail@halo-lab.com">mail@halo-lab.com</a>
+                </li>
+                <li>
+                    <a href="tel:+380962722100">UA: +38 096 272 2100</a>
                 </li>
             </ul>
-                    <div class="social_icons">
-                        <a href="https://www.facebook.com/halolabteam/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/halolabteam/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/halolabteam/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.behance.net/halolab" target="_blank"><i class="fab fa-behance"></i></a>
-                    </div>
-                </nav>
-                <nav class="n2" >
-                    <h3 class="footer__title-list">Sitemap</h3>
-                    <ul role="list" class="footer__list">
-                        <li>
-                            <a href="#Objects">Objects</a>
-                        </li>
-                        <li>
-                            <a href="#Our-gallery">Our gallery</a>
-                        </li>
-                        <li>
-                            <a href="#About">About</a>
-                        </li>
-                        <li>
-                            <a href="#Contacts">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="social_icons">
+                <a href="https://www.facebook.com/halolabteam/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/halolabteam/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/halolabteam/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.behance.net/halolab" target="_blank"><i class="fab fa-behance"></i></a>
             </div>
+        </nav>
+        <nav class="n2">
+            <h3 class="footer__title-list">Sitemap</h3>
+            <ul role="list" class="footer__list">
+                <li>
+                    <a href="#Objects">Objects</a>
+                </li>
+                <li>
+                    <a href="#Our-gallery">Our gallery</a>
+                </li>
+                <li>
+                    <a href="#About">About</a>
+                </li>
+                <li>
+                    <a href="#Contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
         </div>
-        </footer>
+        </div>
+    </footer>
 
-        <div class="shop-icon">
-            <div id="cart-icon" onclick="redirectToCart()"></div>
-             <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px"
-                fill="#EFEFEF">
-                <path
-                    d="M206-120q-20 0-36.5-12T148-164L38-562q-4-14 4.83-26 8.82-12 24.17-12h202l185-270q5-6 11-9.5t14-3.5q8 0 14 3.5t11 9.5l184 270h206q15.35 0 24.17 12 8.83 12 4.83 26L812-164q-5 20-21.5 32T754-120H206Zm0-60h548l101-360H106l100 360Zm274.18-120q24.82 0 42.32-17.68 17.5-17.67 17.5-42.5 0-24.82-17.68-42.32-17.67-17.5-42.5-17.5-24.82 0-42.32 17.68-17.5 17.67-17.5 42.5 0 24.82 17.68 42.32 17.67 17.5 42.5 17.5ZM342-600h273L479-800 342-600Zm139 240Z" />
-            </svg></div>
-                
-        
-        
-        
-            <script src="https://kit.fontawesome.com/25e1aadaee.js" crossorigin="anonymous"></script>
-        
+    <div class="shop-icon">
+        <div id="cart-icon" onclick="redirectToCart()"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="70px" viewBox="0 -960 960 960" width="70px" fill="#EFEFEF">
+            <path
+                d="M206-120q-20 0-36.5-12T148-164L38-562q-4-14 4.83-26 8.82-12 24.17-12h202l185-270q5-6 11-9.5t14-3.5q8 0 14 3.5t11 9.5l184 270h206q15.35 0 24.17 12 8.83 12 4.83 26L812-164q-5 20-21.5 32T754-120H206Zm0-60h548l101-360H106l100 360Zm274.18-120q24.82 0 42.32-17.68 17.5-17.67 17.5-42.5 0-24.82-17.68-42.32-17.67-17.5-42.5-17.5-24.82 0-42.32 17.68-17.5 17.67-17.5 42.5 0 24.82 17.68 42.32 17.67 17.5 42.5 17.5ZM342-600h273L479-800 342-600Zm139 240Z" />
+        </svg>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/25e1aadaee.js" crossorigin="anonymous"></script>
+
     <script src="index.js"></script>
 </body>
 
