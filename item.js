@@ -97,3 +97,7 @@ fetch('categorized_products.json')
             this.style.backgroundImage = 'url("pro/search.png")'; 
         }
     });
+    function goToPage() {
+        
+        window.location.href = "index.html";
+    }
